@@ -2,19 +2,19 @@ import styles from "./Projects.module.scss";
 
 const item = [
     {
-        imgSrc: "Снимок111.png",
+        imgSrc: "snimok1.png",
         name: "Joey",
         websiteLink: "#",
         codeLink: "#"
     },
     {
-        imgSrc: "Снимок222.png",
+        imgSrc: "snimok2.png",
         name: "Fly cats",
         websiteLink: "https://slvgbn.github.io/fly-cats/",
         codeLink: "https://github.com/SlvGbn/fly-cats"
     },
     {
-        imgSrc: "Снимок333.png",
+        imgSrc: "snimok3.png",
         name: "Dogs gallery",
         websiteLink: "https://slvgbn.github.io/dogs-gallery/",
         codeLink: "https://github.com/SlvGbn/dogs-gallery"
