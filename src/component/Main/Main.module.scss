@@ -1,0 +1,25 @@
+@use "media";
+
+.Main {
+    width: 1217px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 120px;
+}
+
+@media (min-width: media.$sm) and (max-width: calc(media.$md - 1px)) {
+    .Main {
+        width: media.fv(343px, 668px, media.$sm, media.$md);
+        gap: media.fv(60px, 80px, media.$sm, media.$md);
+    }
+}
+
+@media (min-width: media.$md) and (max-width: calc(media.$lg - 1px)) {
+    .Main {
+        width: media.fv(668px, 1217px, media.$md, media.$lg);
+        gap:  media.fv(80px, 120px, media.$md, media.$lg);
+    }
+
+}
+

@@ -1,0 +1,185 @@
+@use "media";
+
+
+.Projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // background: linear-gradient(221deg, rgba(222,226,230,1) 0%, rgba(18,18,18,1) 100%);
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 15px;
+    gap: 40px;
+
+
+    .Heading {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        align-self: flex-start;
+        font-size: 40px;
+    }
+
+
+    .ContentBlock {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 30px;
+
+        .ContentItem {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            .Image {
+                width: 592px;
+                border-radius: 14px;
+                border: solid 2px black;
+            }
+
+            .Description {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                align-self: flex-start;
+
+                .Name {
+                    font-size: 20px;
+                }
+    
+                .Content__Code_Link, .WebsiteLink {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 8px;
+                    align-items: center;
+                    justify-content: flex-start;
+                    text-decoration: none;
+    
+                    .Link__Img {
+                        width: 24px;
+                    }
+    
+                    .Link__Text {
+                        color: black;
+                        font-size: 20px;
+                    }
+                }
+            }
+          
+        }
+    }
+}
+
+
+
+@media (min-width: media.$sm) and (max-width: calc(media.$md - 1px)) {
+    // .Expertise {
+    //     gap:  media.fv(14px, 40px, media.$sm, media.$md);
+    // }
+
+    .Projects {
+        flex-direction: column;
+        gap: 24px;
+    
+        .Heading {
+            font-size: media.fv(24px, 32px, media.$sm, media.$md);
+        }
+    
+    
+        .ContentBlock {
+            gap: 43px;
+            justify-content: center;
+    
+            .ContentItem {
+                flex-direction: column;
+                gap: 8px;
+               
+    
+                .Image {
+                    width: media.fv(343px, 688px, media.$sm, media.$md);
+                }
+    
+                .Description {
+                    gap: 8px;
+                    align-self: flex-start;
+
+                    .Name {
+                        font-size: 20px;
+                    }
+    
+                    .Content__Code_Link, .WebsiteLink {
+                        gap: 8px;
+        
+                        .Link__Img {
+                            width: 16px;
+                        }
+                        
+                        .Link__Text {
+                            font-size: 20px;
+                        }
+                      
+                    }
+                }
+              
+            }
+        }
+    }
+
+}
+
+@media (min-width: media.$md) and (max-width: calc(media.$lg - 1px)) {
+
+
+    .Projects {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 24px;
+    
+        .Heading {
+            font-size: 28px;
+        }
+    
+    
+        .ContentBlock {
+            gap: 16px;
+    
+            .ContentItem {
+                flex-direction: column;
+                gap: 8px;
+    
+                .Image {
+                    width: media.fv(300px, 592px, media.$md, media.$lg);
+                }
+    
+                .Description {
+                    gap: 8px;
+                    align-self: flex-start;
+
+                    .Name {
+                        font-size: 20px;
+                    }
+    
+                    .Content__Code_Link, .WebsiteLink {
+                        gap: 8px;
+        
+                        .Link__Img {
+                            width: 24px;
+                        }
+                        
+                        .Link__Text {
+                            font-size: 20px;
+                        }
+                      
+                    }
+                }
+              
+            }
+        }
+    }
+}
+
