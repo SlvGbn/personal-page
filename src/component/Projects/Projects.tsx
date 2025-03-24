@@ -4,8 +4,8 @@ const item = [
     {
         imgSrc: "snimok1.png",
         name: "Joey",
-        websiteLink: "#",
-        codeLink: "#"
+        websiteLink: "https://slvgbn.github.io/joey-portfolio/",
+        codeLink: "https://github.com/SlvGbn/joey-portfolio"
     },
     {
         imgSrc: "snimok2.png",
